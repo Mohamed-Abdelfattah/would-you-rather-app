@@ -1,0 +1,38 @@
+.chart-bar {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-bar__inner {
+  height: 2em;
+  width: 100%;
+  border: 1px solid #313131;
+  border-radius: 12px;
+  background-color: #dcd4f3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.chart-bar__fill {
+  background-color: #3592e9;
+  height: 2rem;
+  transition: all 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-bar__label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  position: absolute;
+  left: 48%;
+}

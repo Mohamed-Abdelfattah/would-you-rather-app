@@ -1,0 +1,52 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sorting {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #b2d4d4;
+  margin-bottom: 2rem;
+}
+
+.sorting button {
+  font: inherit;
+  color: teal;
+  border: 1px solid teal;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.sorting button:hover {
+  background-color: #c2e7f0;
+}
+
+button.active {
+  background-color: #c2e7f0;
+}
+.sorting a {
+  font: inherit;
+  color: teal;
+  /* border: 1px solid teal; */
+  background-color: transparent;
+  /* border-radius: 4px; */
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.sorting a:hover {
+  background-color: #c2e7f0;
+}
+
+a.active {
+  background-color: #c2e7f0;
+  border-bottom: 3px solid teal;
+  background-image: linear-gradient(#e7f8f8, #cceff8);
+  background: #c2e7f0;
+  background: linear-gradient(#e7f8f8, #cceff8);
+}
