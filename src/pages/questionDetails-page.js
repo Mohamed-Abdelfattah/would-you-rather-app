@@ -49,6 +49,7 @@ const QuestionDetailsPage = (props) => {
   const dispatch = useDispatch();
   const params = useParams();
   const history = useHistory();
+  // console.log(history);
 
   let q = questions.questionsList.find((el) => el.id === params.id);
   let userAnsweredQuestionWith = users.activeUser.answers[q.id] || null;
@@ -56,7 +57,7 @@ const QuestionDetailsPage = (props) => {
   useEffect(() => {
     //
     dispatch(fetchQuetionById(params.id));
-  }, []);
+  }, [dispatch, params]);
 
   const percentage = {
     opt1: { number: 0, text: '' },

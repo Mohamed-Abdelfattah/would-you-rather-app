@@ -176,7 +176,7 @@ export function _saveQuestion(question) {
 
 export function _saveQuestionAnswer({ authedUser, qid, answer }) {
   return new Promise((res, rej) => {
-    console.log('@ _DATA and params ==>', authedUser, qid, answer);
+    // console.log('@ _DATA and params ==>', authedUser, qid, answer);
     setTimeout(() => {
       users = {
         ...users,

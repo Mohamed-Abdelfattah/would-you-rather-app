@@ -70,18 +70,18 @@ export const questionGotAnswered = (questionId, userId, choice) => {
   return async (dispatch) => {
     dispatch(statusActions.pending());
     try {
-      console.log(
-        'calling _save fn with params userId, questionId, choice ==> ',
-        userId,
-        questionId,
-        choice
-      );
+      // console.log(
+      //   'calling _save fn with params userId, questionId, choice ==> ',
+      //   userId,
+      //   questionId,
+      //   choice
+      // );
       await _saveQuestionAnswer({
         authedUser: userId,
         qid: questionId,
         answer: choice,
       });
-      dispatch(questionsActions.addAnswer({ questionId, choice }));
+      dispatch(questionsActions.addAnswer({ userId, questionId, choice }));
       dispatch(usersActions.userAnswered({ userId, questionId, choice }));
       dispatch(statusActions.success());
     } catch (err) {

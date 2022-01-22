@@ -61,7 +61,7 @@ const MainNavigation = () => {
             component="div"
             sx={{
               // mr: 2,
-              display: { xs: 'none', sm: 'flex' },
+              display: { xs: 'none', md: 'flex' },
               fontSize: { sm: '1.5rem', md: '1.75rem' },
             }}
           >
@@ -71,7 +71,7 @@ const MainNavigation = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: 'flex', sm: 'none' },
+              display: { xs: 'flex', md: 'none' },
             }}
           >
             <IconButton
@@ -99,7 +99,7 @@ const MainNavigation = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', sm: 'none' },
+                display: { xs: 'block', md: 'none' },
               }}
             >
               <nav className={classes.nav}>
@@ -141,9 +141,9 @@ const MainNavigation = () => {
             component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: 'flex', sm: 'none' },
+              display: { xs: 'flex', md: 'none' },
               height: '2rem',
-              fontSize: '1.5rem',
+              fontSize: { xs: '1.5rem', sm: '1.75rem' },
             }}
           >
             Would You Rather...
@@ -151,7 +151,7 @@ const MainNavigation = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: 'none', sm: 'flex' },
+              display: { xs: 'none', md: 'flex' },
               justifyContent: { sm: 'center', md: 'space-evenly' },
               // fontSize: '1.75rem',
             }}

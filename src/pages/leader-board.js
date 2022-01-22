@@ -1,4 +1,3 @@
-import { Box } from '@mui/material';
 import { Fragment } from 'react';
 import { useSelector } from 'react-redux';
 import LeaderBoardItem from '../features/users/LeaderBoardItem';
@@ -25,18 +24,10 @@ const LeaderBoard = (props) => {
 
   return (
     <Fragment>
-      <h2>Leader Board Page</h2>
       {ranking.length > 0 &&
         ranking.map((user, index) => (
           <div>
-            <Box sx={{ height: '15rem' }}>
-              <LeaderBoardItem key={user.id} rank={index + 1} userData={user} />
-            </Box>
-            <p>Name: {user.name}</p>
-            <p>Total Score: {user.totalScore}</p>
-            <p>Questions: {user.questionsScore}</p>
-            <p>Answeres: {user.answersScore}</p>
-            <hr />
+            <LeaderBoardItem key={user.id} rank={index + 1} userData={user} />
           </div>
         ))}
     </Fragment>
