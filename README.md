@@ -11,6 +11,7 @@ The project was meant to be a demonestration/practice/application for the usage 
 
 ## Usage
 
+### Link for the live version: [Would You Rather] (http://would-you-rather-app-seven.vercel.app/)
 Install dependencies via npm:
 `npm install`
 and then app can be served on Localhost which can be done via npm script:
