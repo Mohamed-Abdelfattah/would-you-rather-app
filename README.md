@@ -1,7 +1,7 @@
 # Would You Rather Project
 
 This is my impelementation for an assessment project for Udacity's React course.
-The project is a simple impelmentation of [Would You Rather game] (https://en.wikipedia.org/wiki/Would_you_rather).
+The project is a simple impelmentation of [Would You Rather game](https://en.wikipedia.org/wiki/Would_you_rather).
 
 To interact with/play the game user should login using a list that contains a pre-creadted users and then he will be able to answer questions or add a new ones and also check the leaderboard or even logout and sign-in with same or different user.
 
@@ -11,7 +11,7 @@ The project was meant to be a demonestration/practice/application for the usage 
 
 ## Usage
 
-### Link for the live version: [Would You Rather] (http://would-you-rather-app-seven.vercel.app/)
+#### Link for the live version: [Would You Rather](http://would-you-rather-app-seven.vercel.app/)
 Install dependencies via npm:
 `npm install`
 and then app can be served on Localhost which can be done via npm script:
